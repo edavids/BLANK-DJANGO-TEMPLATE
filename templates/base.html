@@ -1,0 +1,41 @@
+{% url 'login' as login_url %}
+{% url 'register' as register_url %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% include "snippets/css.html" %}
+        {% block css-content %}
+          
+        {% endblock %}
+    </head>
+    <body class="{% if request.path == login_url %}valign-wrapper{%elif  request.path == register_url%}valign-wrapper{% endif %}">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        {% block navbar %}
+          
+        {% endblock navbar %}
+        <div class="container">
+            {% block content %}
+          
+            {% endblock %}
+        </div>
+
+
+        {% include "snippets/js.html" %}
+
+        
+        {% block js-content %}
+            
+        {% endblock js-content %}
+            
+    </body>
+</html>

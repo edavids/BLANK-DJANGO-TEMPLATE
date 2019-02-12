@@ -1,0 +1,6 @@
+database is dabuch
+password is Jeloblisvent
+user is jeloblis
+
+current work
+create the tasks app

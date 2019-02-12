@@ -1,0 +1,54 @@
+@import url(
+    'https://fonts.googleapis.com/css?family=Lobster|Raleway|Righteous|Ubuntu'
+    );
+
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.header-font {
+    font-family: 'Righteous', cursive;
+    font-weight: 800;
+}
+.italizeed-font {
+    font-family: 'Lobster', cursive;
+    font-weight: 400;
+}
+body {
+    max-width: 100vh !important;
+    min-height: 70vh !important;
+    font-family: 'Raleway', 'Ubuntu', sans-serif !important;
+    font-weight: 200 !important;
+    background-color: #FFF !important;
+    margin: 0 !important;
+}
+
+.brand-logo {
+    color: #3f3f3f !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+}
+.nav-link li a{
+    color: #3f3f3f !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+}
+.sidenav-icon{
+    color: #3f3f3f !important;
+}
+
+
+/*=============================================
+=            registration            =
+=============================================*/
+
+
+/*=====  End of registration  ======*/
+

@@ -1,0 +1,22 @@
+{% url 'login' as login_url %}
+{% url 'logout' as logout_url %}
+{% url 'register' as register_url %}
+
+{% url 'account:home' as account_url %}
+
+
+
+<nav class="white navbar-fixed" role="navigation">
+    <div class="nav-wrapper container-fluid">
+        <a href="#" data-target="nav-mobile" class="left show-on-large sidenav-icon sidenav-trigger"><i class="material-icons">menu</i></a>
+        <a id="logo-container" href="#" class="brand-logo center">Logo</a>
+        <ul class="right hide-on-small-only nav-link">
+            <li class="{% if request.path == login_url %}active{% endif %}"><a href="{{login_url}}">login</a></li>
+            <li class="{% if request.path == register_url %}active{% endif %}"><a href="{{register_url}}">register</a></li>
+        </ul>
+    </div>
+</nav>
+<ul id="nav-mobile" class="sidenav">
+    <li class="{% if request.path == login_url %}active{% endif %}"><a href="{{login_url}}" class="hide-on-med-and-up">login</a></li>
+    <li class="{% if request.path == register_url %}active{% endif %}"><a href="{{register_url}}" class="hide-on-med-and-up">register</a></li>
+</ul>

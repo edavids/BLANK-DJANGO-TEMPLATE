@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}
+  LOGIN
+{% endblock title %}
+
+{% block content %}
+<div class="card section" style="width:100% !important;max-height:100vh !important;">
+<div class="container">
+  <h3 style="font-weight: 900 !important; text-align: center; font-size: 25px; margin-bottom:2em;">Login</h3>
+  <form method='POST'> {% csrf_token %}
+    {{ form }}
+    <button type='submit' class='btn btn-default' style="margin-bottom:2em; width:100%; margin-top:2em !important;">Submit</button>
+  </form>
+  <hr >
+  <p><a href="{% url 'register' %}"><em>Don't have an account?</em></a></p>
+</div>
+</div>
+
+{% endblock %}
